@@ -600,27 +600,43 @@
 
 ## Blocks
 
-  - Use braces with all multi-line blocks.
+  - Use braces with all blocks. Always place the opening brace on the same line as the control structure declaration.
 
     ```javascript
     // bad
     if (test)
       return false;
 
-    // good
+    // bad
     if (test) return false;
 
     // good
-    if (test) {
-      return false;
-    }
-
-    // bad
-    function() { return false; }
+    if (test) { return false; }
 
     // good
-    function() {
-      return false;
+    for (initialization; condition; update) {
+        statements;
+    }
+
+    // good
+    if (someCondition) {
+        statements;
+    } else if (someOtherCondition) {
+        statements;
+    } else {
+        statements;
+    }
+
+    // good
+    switch (condition) {
+        case ABC:
+            statements;
+            break;
+        case DEF:
+            statements;
+            break;
+        default:
+            statements;
     }
     ```
 
@@ -647,12 +663,11 @@
 
     // good
     /**
-     * make() returns a new element
-     * based on the passed in tag name
-     *
-     * @param <String> tag
-     * @return <Element> element
-     */
+    make() returns a new element based on the passed in tag name
+
+    @param <String> tag
+    @return <Element> element
+    */
     function make(tag) {
 
       // ...stuff...
@@ -722,7 +737,7 @@
 
 ## Whitespace
 
-  - Use soft tabs set to 2 spaces
+  - Use hard tabs (set to 4 spaces)
 
     ```javascript
     // bad
@@ -735,9 +750,14 @@
     ∙var name;
     }
 
-    // good
+    // bad
     function() {
     ∙∙var name;
+    }
+
+    // good
+    function() {
+        var name;
     }
     ```
 
@@ -1055,6 +1075,16 @@
     var good = new User({
       name: 'yup'
     });
+    ```
+
+  - Use Screaming Snake Case for constants
+
+    ```javascript
+    // bad
+    var some_constant = 5;
+
+    // good
+    var SOME_CONSTANT = 5;
     ```
 
   - Use a leading underscore `_` when naming private properties
@@ -1468,39 +1498,6 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## In the Wild
-
-  This is a list of organizations that are using this style guide. Send us a pull request or open an issue and we'll add you to the list.
-
-  - **Aan Zee**: [AanZee/javascript](https://github.com/AanZee/javascript)
-  - **Airbnb**: [airbnb/javascript](https://github.com/airbnb/javascript)
-  - **American Insitutes for Research**: [AIRAST/javascript](https://github.com/AIRAST/javascript)
-  - **Compass Learning**: [compasslearning/javascript-style-guide](https://github.com/compasslearning/javascript-style-guide)
-  - **Digitpaint** [digitpaint/javascript](https://github.com/digitpaint/javascript)
-  - **ExactTarget**: [ExactTarget/javascript](https://github.com/ExactTarget/javascript)
-  - **Gawker Media**: [gawkermedia/javascript](https://github.com/gawkermedia/javascript)
-  - **GeneralElectric**: [GeneralElectric/javascript](https://github.com/GeneralElectric/javascript)
-  - **GoodData**: [gooddata/gdc-js-style](https://github.com/gooddata/gdc-js-style)
-  - **Grooveshark**: [grooveshark/javascript](https://github.com/grooveshark/javascript)
-  - **How About We**: [howaboutwe/javascript](https://github.com/howaboutwe/javascript)
-  - **Mighty Spring**: [mightyspring/javascript](https://github.com/mightyspring/javascript)
-  - **MinnPost**: [MinnPost/javascript](https://github.com/MinnPost/javascript)
-  - **ModCloth**: [modcloth/javascript](https://github.com/modcloth/javascript)
-  - **Money Advice Service**: [moneyadviceservice/javascript](https://github.com/moneyadviceservice/javascript)
-  - **National Geographic**: [natgeo/javascript](https://github.com/natgeo/javascript)
-  - **National Park Service**: [nationalparkservice/javascript](https://github.com/nationalparkservice/javascript)
-  - **Orion Health**: [orionhealth/javascript](https://github.com/orionhealth/javascript)
-  - **Peerby**: [Peerby/javascript](https://github.com/Peerby/javascript)
-  - **Razorfish**: [razorfish/javascript-style-guide](https://github.com/razorfish/javascript-style-guide)
-  - **SeekingAlpha**: [seekingalpha/javascript-style-guide](https://github.com/seekingalpha/javascript-style-guide)
-  - **reddit**: [reddit/styleguide/javascript](https://github.com/reddit/styleguide/tree/master/javascript)
-  - **REI**: [reidev/js-style-guide](https://github.com/reidev/js-style-guide)
-  - **Ripple**: [ripple/javascript-style-guide](https://github.com/ripple/javascript-style-guide)
-  - **Shutterfly**: [shutterfly/javascript](https://github.com/shutterfly/javascript)
-  - **Userify**: [userify/javascript](https://github.com/userify/javascript)
-  - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
-  - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
-
 ## Translation
 
   This style guide is also available in other languages:
@@ -1518,11 +1515,6 @@
 ## The JavaScript Style Guide Guide
 
   - [Reference](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
-
-## Contributors
-
-  - [View Contributors](https://github.com/airbnb/javascript/graphs/contributors)
-
 
 ## License
 

@@ -25,9 +25,6 @@
       // Define globals exposed by jQuery.
       "jquery": true,
 
-      // Define globals exposed by Node.js.
-      "node": true,
-
       /*
        * ENFORCING OPTIONS
        * =================
@@ -37,14 +34,17 @@
       // with underscores.
       "camelcase": true,
 
+      // Always put curly braces around blocks
+      "curly": true,
+
       // Prohibit use of == and != in favor of === and !==.
       "eqeqeq": true,
 
       // Suppress warnings about == null comparisons.
       "eqnull": true,
 
-      // Enforce tab width of 2 spaces.
-      "indent": 2,
+      // Don't try to detect whitespace - our standard is always tabs
+  	  "smarttabs": false,
 
       // Prohibit use of a variable before it is defined.
       "latedef": true,
