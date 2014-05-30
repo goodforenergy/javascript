@@ -16,7 +16,7 @@
    */
 
   // Force all variable names to use either camelCase style or UPPER_CASE
-  // with underscores.
+  // with underscores. This is covered by JSCS requireCamelCaseOrUpperCaseIdentifiers.
   "camelcase": true,
 
   // Always put curly braces around blocks
@@ -49,7 +49,7 @@
   // Warn when variables are defined but never used.
   "unused": true,
 
-  // Enforce line length to 140 characters
+  // Enforce line length to 140 characters. This is covered by JSCS maximumLineLength.
   "maxlen": 140,
 
   // Enforce placing 'use strict' at the top function scope
