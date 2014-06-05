@@ -10,6 +10,10 @@
   // Define globals exposed by jQuery.
   "jquery": true,
 
+  "globals": {
+    "BMS": false
+  },
+
   /*
    * ENFORCING OPTIONS
    * =================
