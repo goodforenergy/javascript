@@ -1,0 +1,67 @@
+{
+  /*
+   * ENVIRONMENTS
+   * =================
+   */
+
+  // Define globals exposed by modern browsers.
+  "browser": true,
+
+  // Define globals exposed by jQuery.
+  "jquery": true,
+
+  "globals": {
+    "BMS": false
+  },
+
+  /*
+   * ENFORCING OPTIONS
+   * =================
+   */
+
+  // Force all variable names to use either camelCase style or UPPER_CASE with underscores.
+  "camelcase": true,
+
+  // Always put curly braces around blocks.
+  "curly": true,
+
+  // Enforce use of single quotation marks for strings.
+  "quotmark": "single",
+
+  /*
+   * RELAXING OPTIONS
+   * =================
+   */
+
+  // Suppress warnings about == null comparisons.
+  "eqnull": true,
+
+  /*
+   * DISABLING OPTIONS
+   * =================
+   */
+
+  // Disable warning about using identifiers before they are defined
+  "-W003": true,
+
+  // Disable warning about using variables before they are defined
+  "-W117": true,
+
+  // Disable warning about bad line breaking before operator
+  "-W014": true,
+
+  // Disable warning about using String, Number, Boolean, Math or JSON as a constructor
+  "-W053": true,
+
+  // Disable warning where the catch identifier is the same as a variable or function identifer
+  "-W002": true,
+
+  // Disable warning about using == instead of ===
+  "-W116": true,
+
+  // Disable warning about using == to compare with true, 0, '', etc
+  "-W041": true,
+
+  // Disable Read only warning for disallowing asignment to globals and native objects
+  "-W020": true
+}
