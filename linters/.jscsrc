@@ -41,17 +41,12 @@
 
     "disallowSpacesInsideParentheses": true,
 
-    // "requireSpacesInsideObjectBrackets": "allButNested",
-
     "disallowQuotedKeysInObjects": true,
 
     "disallowSpaceAfterObjectKeys": true,
 
     "requireCommaBeforeLineBreak": true,
 
-    // "requireAlignedObjectValues": "skipWithLineBreak",
-
-    // In master, JSCS can take 'true' as an argument here, but not in the latest release
     "requireOperatorBeforeLineBreak": [
 	   "=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=",
 	   "&=", "|=", "^=", "+=",
@@ -72,7 +67,6 @@
         "<=", "<", ">", "!=", "!=="
     ],
 
-    // In master, JSCS can take 'true' as an argument here, but not in the latest release
     "requireSpaceAfterBinaryOperators": [
 	   "=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=",
 	   "&=", "|=", "^=", "+=",
@@ -92,13 +86,12 @@
 
     "requireCamelCaseOrUpperCaseIdentifiers": true,
 
-    "disallowKeywords": ["with", "delete", "eval"],
+    "disallowKeywords": ["with", "eval"],
 
     "disallowMultipleLineStrings": true,
 
     "disallowMultipleLineBreaks": true,
 
-    // { "mark": "\"", "escape": true }
     "validateQuoteMarks": "'",
 
     "validateIndentation": "\t",
@@ -112,9 +105,4 @@
     "disallowKeywordsOnNewLine": ["else"],
 
     "requireLineFeedAtFileEnd": true
-
-    // "validateJSDoc": {
-    //    "checkParamNames": true,
-    //    "requireParamTypes": true
-    //}
 }
