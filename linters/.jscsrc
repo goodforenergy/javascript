@@ -84,9 +84,9 @@
 	   ",", ":"
 	],
 
-    "requireRightStickedOperators": ["!"],
+	"disallowSpaceBeforeBinaryOperators": [","],
 
-    "requireLeftStickedOperators": [","],
+	"disallowSpaceAfterBinaryOperators": ["!"],
 
     "disallowImplicitTypeConversion": ["string"],
 
