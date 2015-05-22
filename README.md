@@ -21,7 +21,7 @@
   1. [Naming Conventions](#naming-conventions)
   1. [Modules](#modules)
   1. [jQuery](#jquery)
-  1. [AngularJS](#AngularJS)
+  1. [AngularJS](#angularjs)
   1. [Testing](#testing)
 
 ## Objects
@@ -579,9 +579,6 @@
     var val = parseInt(inputValue);
 
     // good
-    var val = Number(inputValue);
-
-    // good
     var val = parseInt(inputValue, 10);
     ```
 
@@ -592,9 +589,6 @@
 
     // bad
     var hasAge = new Boolean(age);
-
-    // good
-    var hasAge = Boolean(age);
 
     // good
     var hasAge = !!age;
