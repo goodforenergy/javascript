@@ -15,8 +15,7 @@
   1. [Blocks](#blocks)
   1. [Comments](#comments)
   1. [Whitespace](#whitespace)
-  1. [Commas](#commas)
-  1. [Semicolons](#semicolons)
+  1. [Commas & Semicolons](#commas--semicolons)
   1. [Type Casting & Coercion](#type-casting--coercion)
   1. [Naming Conventions](#naming-conventions)
   1. [Modules](#modules)
@@ -521,7 +520,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## Commas
+## Commas & Semicolons
 
   - Do not leave trailing commas at the end of objects or arrays.
 
@@ -550,10 +549,6 @@
       'Superman'
     ];
     ```
-
-**[⬆ back to top](#table-of-contents)**
-
-## Semicolons
 
   - Use semicolons at the end of every statement.
 
