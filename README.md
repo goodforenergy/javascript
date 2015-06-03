@@ -423,7 +423,7 @@
 
 ## Comments
 
-  - Use `/** ... */` for multiline comments. Include a description, specify types and values for all parameters and return values.
+  - Use `/* ... */` for multiline comments. Include a description, specify types and values for all parameters and return values.
 
     ```javascript
     // bad
@@ -438,7 +438,7 @@
     }
 
     // good
-    /**
+    /*
     make() returns a new element based on the passed in tag name
 
     @param <String> tag
